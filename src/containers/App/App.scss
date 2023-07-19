@@ -3,6 +3,10 @@
 $block: '.#{variables.$ns}app';
 
 #{$block} {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+
     max-width: 1280px;
     margin-inline: auto;
     padding: 20px;

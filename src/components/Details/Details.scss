@@ -1,0 +1,26 @@
+@use 'styles/variables';
+
+$block: '.#{variables.$ns}details';
+
+#{$block} {
+    align-self: start;
+    justify-self: start;
+
+    border: 1px solid #dedede;
+    border-radius: 4px;
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    &__item {
+        padding: 16px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #dedede;
+        }
+    }
+}
